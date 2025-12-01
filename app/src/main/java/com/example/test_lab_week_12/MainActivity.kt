@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
 
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED){
+                //Assigment
                 launch {
                     movieViewModel.popularMovies.collect { movies ->
 
